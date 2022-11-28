@@ -27,6 +27,7 @@ namespace GameProject
             InitializeComponent();
          
             topic = topics;
+            answersfor += topic;
         }
 
        
@@ -40,13 +41,13 @@ namespace GameProject
             songDataSet = new DataSet("JepordyTable");
             myDataAdapter.Fill(songDataSet, "JepordyTable");
 
+            strSQL = "SELECT TOP 1 " + topic + ", "+ answersfor + " FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
 
             // Set the data source for the DataGridView to display the records and their information.
             songTable = songDataSet.Tables["JepordyTable"];
             dgvJeopardy.DataSource = songTable;
             //strSQL = "SELECT TOP 1" + topic +", "+ answersfor + "FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
-            strSQL = "SELECT TOP 1 " + topic + " FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
-            strSQL = "SELECT TOP 1 Sport, AnswerForSport FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
+            ///strSQL = "SELECT TOP 1 Sport, AnswerForSport FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
 
             //strSQL = "SELECT Sport FROM Jepordy WHERE AnswersForSport = 'Baseball';";
             myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
@@ -63,7 +64,15 @@ namespace GameProject
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            if (txtanswerfor.Text.Equals(dgvJeopardy.Rows[0].Cells[1].Value.ToString()))
+            {
+                lblQuestions.Text = "Answer is correct";
+            }
+            else
+            {
+                lblQuestions.Text = "Answer is incorrect";
 
+            }
         }
     }
 }
