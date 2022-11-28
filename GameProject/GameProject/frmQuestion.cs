@@ -21,11 +21,12 @@ namespace GameProject
         string strSQL;
         string topic = "";
         string answersfor = "AnswersFor";
-
-        public frmQuestion(string topics) {
+        string point;
+        public int CorNC;
+        public frmQuestion(string topics, string points) {
 
             InitializeComponent();
-         
+            point = points;
             topic = topics;
             answersfor += topic;
 
@@ -69,13 +70,23 @@ namespace GameProject
         {
             if (txtanswerfor.Text.Equals(dgvJeopardy.Rows[0].Cells[1].Value.ToString()))
             {
-                lblQuestions.Text = "Answer is correct";
+                MessageBox.Show("Answer is correct!");
+                CorNC = 1;
+                this.Close();
             }
             else
             {
-                lblQuestions.Text = "Answer is incorrect";
-
+                MessageBox.Show("Answer is incorrect!");
+                CorNC = 0;
+                this.Close();
+                
             }
         }
+
+        private void dgvJeopardy_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
-}
+    }
+

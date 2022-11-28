@@ -40,13 +40,14 @@ namespace GameProject
             // dgvJeopardy
             // 
             this.dgvJeopardy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvJeopardy.Location = new System.Drawing.Point(237, 354);
+            this.dgvJeopardy.Location = new System.Drawing.Point(237, 325);
             this.dgvJeopardy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvJeopardy.Name = "dgvJeopardy";
             this.dgvJeopardy.RowHeadersWidth = 62;
             this.dgvJeopardy.RowTemplate.Height = 28;
-            this.dgvJeopardy.Size = new System.Drawing.Size(276, 100);
+            this.dgvJeopardy.Size = new System.Drawing.Size(210, 110);
             this.dgvJeopardy.TabIndex = 1;
+            this.dgvJeopardy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJeopardy_CellContentClick);
             // 
             // lblQuestions
             // 

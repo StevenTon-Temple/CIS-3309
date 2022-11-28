@@ -91,7 +91,7 @@ namespace GameProject
             this.btnSport400.TabIndex = 2;
             this.btnSport400.Text = "400";
             this.btnSport400.UseVisualStyleBackColor = false;
-            this.btnSport400.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnSport400.Click += new System.EventHandler(this.btnSport400_Click);
             // 
             // btnSport600
             // 
@@ -105,7 +105,7 @@ namespace GameProject
             this.btnSport600.TabIndex = 3;
             this.btnSport600.Text = "600";
             this.btnSport600.UseVisualStyleBackColor = false;
-            this.btnSport600.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnSport600.Click += new System.EventHandler(this.btnSport600_Click);
             // 
             // btnSport800
             // 
@@ -119,7 +119,7 @@ namespace GameProject
             this.btnSport800.TabIndex = 4;
             this.btnSport800.Text = "800";
             this.btnSport800.UseVisualStyleBackColor = false;
-            this.btnSport800.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnSport800.Click += new System.EventHandler(this.btnSport800_Click);
             // 
             // btnHis800
             // 
@@ -509,12 +509,12 @@ namespace GameProject
         private System.Windows.Forms.Button btnGeo200;
         private System.Windows.Forms.Label lblTeam1;
         private System.Windows.Forms.Label lblTeam2;
-        private System.Windows.Forms.Label lbl1Score;
-        private System.Windows.Forms.Label lbl2Score;
         private System.Windows.Forms.GroupBox gbSport;
         private System.Windows.Forms.GroupBox gbHistory;
         private System.Windows.Forms.GroupBox gbScience;
         private System.Windows.Forms.GroupBox gbMath;
         private System.Windows.Forms.GroupBox gbGeography;
+        public System.Windows.Forms.Label lbl1Score;
+        public System.Windows.Forms.Label lbl2Score;
     }
 }
