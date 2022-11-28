@@ -161,7 +161,7 @@ namespace GameProject
             this.btnHis400.TabIndex = 6;
             this.btnHis400.Text = "400";
             this.btnHis400.UseVisualStyleBackColor = false;
-            this.btnHis400.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnHis400.Click += new System.EventHandler(this.btnSport400_Click);
             // 
             // btnHis200
             // 

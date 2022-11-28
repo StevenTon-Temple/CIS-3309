@@ -64,8 +64,27 @@ namespace GameProject
             questions.ShowDialog();
             if (questions.CorNC == 1)
             {
-                
-                    score1 += int.Parse(point200);
+                if (topic.Equals("Sport"))
+                {
+                    btnSport200.Visible = false;
+                }
+                if (topic.Equals("History"))
+                {
+                    btnHis200.Visible = false;
+                }
+                if (topic.Equals("Science"))
+                {
+                    btnSci200.Visible = false;
+                }
+                if (topic.Equals("Math"))
+                {
+                    btnMath200.Visible = false;
+                }
+                if (topic.Equals("Geography"))
+                {
+                    btnGeo200.Visible = false;
+                }
+                score1 += int.Parse(point200);
                     lbl1Score.Text = score1.ToString();
               
 
@@ -79,8 +98,27 @@ namespace GameProject
             questions.ShowDialog();
             if (questions.CorNC == 1)
             {
-               
-                    score1 += int.Parse(point400);
+                if (topic.Equals("Sport"))
+                {
+                    btnSport400.Visible = false;
+                }
+                if (topic.Equals("History"))
+                {
+                    btnHis400.Visible = false;
+                }
+                if (topic.Equals("Science"))
+                {
+                    btnSci400.Visible = false;
+                }
+                if (topic.Equals("Math"))
+                {
+                    btnMath400.Visible = false;
+                }
+                if (topic.Equals("Geography"))
+                {
+                    btnGeo400.Visible = false;
+                }
+                score1 += int.Parse(point400);
                     lbl1Score.Text = score1.ToString();
              
                 
@@ -96,7 +134,23 @@ namespace GameProject
             {
                 if (topic.Equals("Sport"))
                 {
-                    btnSport200.Enabled = false;
+                    btnSport600.Visible = false;
+                }
+                if (topic.Equals("History"))
+                {
+                    btnHis600.Visible = false;
+                }
+                if (topic.Equals("Science"))
+                {
+                    btnSci600.Visible = false;
+                }
+                if (topic.Equals("Math"))
+                {
+                    btnMath600.Visible = false;
+                }
+                if (topic.Equals("Geography"))
+                {
+                    btnGeo600.Visible = false;
                 }
                 score1 += int.Parse(point600);
                 lbl1Score.Text = score1.ToString();
@@ -111,8 +165,27 @@ namespace GameProject
             questions.ShowDialog();
             if (questions.CorNC == 1)
             {
-                
-                    score1 += int.Parse(point800);
+                if (topic.Equals("Sport"))
+                {
+                    btnSport800.Visible = false;
+                }
+                if (topic.Equals("History"))
+                {
+                    btnHis800.Visible = false;
+                }
+                if (topic.Equals("Science"))
+                {
+                    btnSci800.Visible = false;
+                }
+                if (topic.Equals("Math"))
+                {
+                    btnMath800.Visible = false;
+                }
+                if (topic.Equals("Geography"))
+                {
+                    btnGeo800.Visible = false;
+                }
+                score1 += int.Parse(point800);
                     lbl1Score.Text = score1.ToString();
              
                
