@@ -38,7 +38,7 @@ namespace GameProject
             // Set the data source for the DataGridView to display the records and their information.
             songTable = songDataSet.Tables["JepordyTable"];
             dgvJeopardy.DataSource = songTable;
-            strSQL = "SELECT TOP 1 Sport FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
+            strSQL = "SELECT TOP 1 Sport, AnswerForSport FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
 
             //strSQL = "SELECT Sport FROM Jepordy WHERE AnswersForSport = 'Baseball';";
             myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
@@ -50,6 +50,11 @@ namespace GameProject
             int columnindex = dgvJeopardy.CurrentCell.ColumnIndex;
             lblQuestions.Text = dgvJeopardy.Rows[rowindex].Cells[columnindex].Value.ToString();
 
+
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
 
         }
     }
