@@ -31,7 +31,7 @@ namespace GameProject
         {
             this.dgvJeopardy = new System.Windows.Forms.DataGridView();
             this.lblQuestions = new System.Windows.Forms.Label();
-            this.txtAnswer = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJeopardy)).BeginInit();
@@ -51,22 +51,19 @@ namespace GameProject
             // lblQuestions
             // 
             this.lblQuestions.AutoSize = true;
-            this.lblQuestions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblQuestions.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lblQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestions.Location = new System.Drawing.Point(138, 67);
+            this.lblQuestions.Location = new System.Drawing.Point(314, 117);
             this.lblQuestions.Name = "lblQuestions";
-            this.lblQuestions.Size = new System.Drawing.Size(78, 20);
+            this.lblQuestions.Size = new System.Drawing.Size(72, 17);
             this.lblQuestions.TabIndex = 2;
             this.lblQuestions.Text = "Questions";
-            this.lblQuestions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblQuestions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtAnswer
+            // textBox1
             // 
-            this.txtAnswer.Location = new System.Drawing.Point(237, 167);
-            this.txtAnswer.Name = "txtAnswer";
-            this.txtAnswer.Size = new System.Drawing.Size(276, 22);
-            this.txtAnswer.TabIndex = 3;
+            this.textBox1.Location = new System.Drawing.Point(237, 167);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(276, 22);
+            this.textBox1.TabIndex = 3;
             // 
             // lblAnswer
             // 
@@ -95,7 +92,7 @@ namespace GameProject
             this.ClientSize = new System.Drawing.Size(735, 455);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblAnswer);
-            this.Controls.Add(this.txtAnswer);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblQuestions);
             this.Controls.Add(this.dgvJeopardy);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -112,7 +109,7 @@ namespace GameProject
 
         private System.Windows.Forms.DataGridView dgvJeopardy;
         private System.Windows.Forms.Label lblQuestions;
-        private System.Windows.Forms.TextBox txtAnswer;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblAnswer;
         private System.Windows.Forms.Button btnSubmit;
     }
