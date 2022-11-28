@@ -28,12 +28,15 @@ namespace GameProject
          
             topic = topics;
             answersfor += topic;
+
         }
 
        
         private void frmQuestion_Load(object sender, EventArgs e)
         {
             Console.Out.WriteLine(topic);
+            Console.Out.WriteLine(answersfor);
+
             // Connect to the database, retrieve a result set of records, and store them in a DataSet
             myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=JepordyTable.accdb;");
             strSQL = "SELECT * FROM Jepordy";
