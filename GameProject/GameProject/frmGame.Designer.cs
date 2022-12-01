@@ -70,10 +70,10 @@ namespace GameProject
             this.btnSport200.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSport200.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSport200.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSport200.Location = new System.Drawing.Point(6, 21);
+            this.btnSport200.Location = new System.Drawing.Point(7, 26);
             this.btnSport200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSport200.Name = "btnSport200";
-            this.btnSport200.Size = new System.Drawing.Size(126, 55);
+            this.btnSport200.Size = new System.Drawing.Size(142, 69);
             this.btnSport200.TabIndex = 1;
             this.btnSport200.Text = "200";
             this.btnSport200.UseVisualStyleBackColor = false;
@@ -84,10 +84,10 @@ namespace GameProject
             this.btnSport400.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSport400.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSport400.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSport400.Location = new System.Drawing.Point(7, 80);
+            this.btnSport400.Location = new System.Drawing.Point(8, 100);
             this.btnSport400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSport400.Name = "btnSport400";
-            this.btnSport400.Size = new System.Drawing.Size(126, 54);
+            this.btnSport400.Size = new System.Drawing.Size(142, 68);
             this.btnSport400.TabIndex = 2;
             this.btnSport400.Text = "400";
             this.btnSport400.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@ namespace GameProject
             this.btnSport600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSport600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSport600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSport600.Location = new System.Drawing.Point(7, 138);
+            this.btnSport600.Location = new System.Drawing.Point(8, 172);
             this.btnSport600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSport600.Name = "btnSport600";
-            this.btnSport600.Size = new System.Drawing.Size(126, 58);
+            this.btnSport600.Size = new System.Drawing.Size(142, 72);
             this.btnSport600.TabIndex = 3;
             this.btnSport600.Text = "600";
             this.btnSport600.UseVisualStyleBackColor = false;
@@ -112,10 +112,10 @@ namespace GameProject
             this.btnSport800.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSport800.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSport800.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSport800.Location = new System.Drawing.Point(6, 200);
+            this.btnSport800.Location = new System.Drawing.Point(7, 250);
             this.btnSport800.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSport800.Name = "btnSport800";
-            this.btnSport800.Size = new System.Drawing.Size(126, 62);
+            this.btnSport800.Size = new System.Drawing.Size(142, 78);
             this.btnSport800.TabIndex = 4;
             this.btnSport800.Text = "800";
             this.btnSport800.UseVisualStyleBackColor = false;
@@ -126,38 +126,38 @@ namespace GameProject
             this.btnHis800.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnHis800.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHis800.ForeColor = System.Drawing.Color.Yellow;
-            this.btnHis800.Location = new System.Drawing.Point(6, 200);
+            this.btnHis800.Location = new System.Drawing.Point(7, 250);
             this.btnHis800.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHis800.Name = "btnHis800";
-            this.btnHis800.Size = new System.Drawing.Size(126, 62);
+            this.btnHis800.Size = new System.Drawing.Size(142, 78);
             this.btnHis800.TabIndex = 8;
             this.btnHis800.Text = "800";
             this.btnHis800.UseVisualStyleBackColor = false;
-            this.btnHis800.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnHis800.Click += new System.EventHandler(this.btnSport800_Click);
             // 
             // btnHis600
             // 
             this.btnHis600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnHis600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHis600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnHis600.Location = new System.Drawing.Point(6, 137);
+            this.btnHis600.Location = new System.Drawing.Point(7, 171);
             this.btnHis600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHis600.Name = "btnHis600";
-            this.btnHis600.Size = new System.Drawing.Size(126, 58);
+            this.btnHis600.Size = new System.Drawing.Size(142, 72);
             this.btnHis600.TabIndex = 7;
             this.btnHis600.Text = "600";
             this.btnHis600.UseVisualStyleBackColor = false;
-            this.btnHis600.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnHis600.Click += new System.EventHandler(this.btnSport600_Click);
             // 
             // btnHis400
             // 
             this.btnHis400.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnHis400.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHis400.ForeColor = System.Drawing.Color.Yellow;
-            this.btnHis400.Location = new System.Drawing.Point(6, 83);
+            this.btnHis400.Location = new System.Drawing.Point(7, 104);
             this.btnHis400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHis400.Name = "btnHis400";
-            this.btnHis400.Size = new System.Drawing.Size(126, 54);
+            this.btnHis400.Size = new System.Drawing.Size(142, 68);
             this.btnHis400.TabIndex = 6;
             this.btnHis400.Text = "400";
             this.btnHis400.UseVisualStyleBackColor = false;
@@ -168,10 +168,10 @@ namespace GameProject
             this.btnHis200.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnHis200.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHis200.ForeColor = System.Drawing.Color.Yellow;
-            this.btnHis200.Location = new System.Drawing.Point(6, 24);
+            this.btnHis200.Location = new System.Drawing.Point(7, 30);
             this.btnHis200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHis200.Name = "btnHis200";
-            this.btnHis200.Size = new System.Drawing.Size(126, 55);
+            this.btnHis200.Size = new System.Drawing.Size(142, 69);
             this.btnHis200.TabIndex = 5;
             this.btnHis200.Text = "200";
             this.btnHis200.UseVisualStyleBackColor = false;
@@ -182,52 +182,52 @@ namespace GameProject
             this.btnSci800.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSci800.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSci800.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSci800.Location = new System.Drawing.Point(12, 202);
+            this.btnSci800.Location = new System.Drawing.Point(14, 252);
             this.btnSci800.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSci800.Name = "btnSci800";
-            this.btnSci800.Size = new System.Drawing.Size(126, 62);
+            this.btnSci800.Size = new System.Drawing.Size(142, 78);
             this.btnSci800.TabIndex = 15;
             this.btnSci800.Text = "800";
             this.btnSci800.UseVisualStyleBackColor = false;
-            this.btnSci800.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnSci800.Click += new System.EventHandler(this.btnSport800_Click);
             // 
             // btnSci600
             // 
             this.btnSci600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSci600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSci600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSci600.Location = new System.Drawing.Point(12, 140);
+            this.btnSci600.Location = new System.Drawing.Point(14, 175);
             this.btnSci600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSci600.Name = "btnSci600";
-            this.btnSci600.Size = new System.Drawing.Size(126, 58);
+            this.btnSci600.Size = new System.Drawing.Size(142, 72);
             this.btnSci600.TabIndex = 14;
             this.btnSci600.Text = "600";
             this.btnSci600.UseVisualStyleBackColor = false;
-            this.btnSci600.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnSci600.Click += new System.EventHandler(this.btnSport600_Click);
             // 
             // btnSci400
             // 
             this.btnSci400.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSci400.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSci400.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSci400.Location = new System.Drawing.Point(12, 80);
+            this.btnSci400.Location = new System.Drawing.Point(14, 100);
             this.btnSci400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSci400.Name = "btnSci400";
-            this.btnSci400.Size = new System.Drawing.Size(126, 54);
+            this.btnSci400.Size = new System.Drawing.Size(142, 68);
             this.btnSci400.TabIndex = 13;
             this.btnSci400.Text = "400";
             this.btnSci400.UseVisualStyleBackColor = false;
-            this.btnSci400.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnSci400.Click += new System.EventHandler(this.btnSport400_Click);
             // 
             // btnSci200
             // 
             this.btnSci200.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSci200.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSci200.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSci200.Location = new System.Drawing.Point(12, 20);
+            this.btnSci200.Location = new System.Drawing.Point(14, 25);
             this.btnSci200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSci200.Name = "btnSci200";
-            this.btnSci200.Size = new System.Drawing.Size(126, 55);
+            this.btnSci200.Size = new System.Drawing.Size(142, 69);
             this.btnSci200.TabIndex = 12;
             this.btnSci200.Text = "200";
             this.btnSci200.UseVisualStyleBackColor = false;
@@ -238,52 +238,52 @@ namespace GameProject
             this.btnMath800.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnMath800.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMath800.ForeColor = System.Drawing.Color.Yellow;
-            this.btnMath800.Location = new System.Drawing.Point(12, 202);
+            this.btnMath800.Location = new System.Drawing.Point(14, 252);
             this.btnMath800.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMath800.Name = "btnMath800";
-            this.btnMath800.Size = new System.Drawing.Size(126, 62);
+            this.btnMath800.Size = new System.Drawing.Size(142, 78);
             this.btnMath800.TabIndex = 20;
             this.btnMath800.Text = "800";
             this.btnMath800.UseVisualStyleBackColor = false;
-            this.btnMath800.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnMath800.Click += new System.EventHandler(this.btnSport800_Click);
             // 
             // btnMath600
             // 
             this.btnMath600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnMath600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMath600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnMath600.Location = new System.Drawing.Point(12, 140);
+            this.btnMath600.Location = new System.Drawing.Point(14, 175);
             this.btnMath600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMath600.Name = "btnMath600";
-            this.btnMath600.Size = new System.Drawing.Size(126, 58);
+            this.btnMath600.Size = new System.Drawing.Size(142, 72);
             this.btnMath600.TabIndex = 19;
             this.btnMath600.Text = "600";
             this.btnMath600.UseVisualStyleBackColor = false;
-            this.btnMath600.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnMath600.Click += new System.EventHandler(this.btnSport600_Click);
             // 
             // btnMath400
             // 
             this.btnMath400.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnMath400.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMath400.ForeColor = System.Drawing.Color.Yellow;
-            this.btnMath400.Location = new System.Drawing.Point(12, 80);
+            this.btnMath400.Location = new System.Drawing.Point(14, 100);
             this.btnMath400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMath400.Name = "btnMath400";
-            this.btnMath400.Size = new System.Drawing.Size(126, 54);
+            this.btnMath400.Size = new System.Drawing.Size(142, 68);
             this.btnMath400.TabIndex = 18;
             this.btnMath400.Text = "400";
             this.btnMath400.UseVisualStyleBackColor = false;
-            this.btnMath400.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnMath400.Click += new System.EventHandler(this.btnSport400_Click);
             // 
             // btnMath200
             // 
             this.btnMath200.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnMath200.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMath200.ForeColor = System.Drawing.Color.Yellow;
-            this.btnMath200.Location = new System.Drawing.Point(12, 20);
+            this.btnMath200.Location = new System.Drawing.Point(14, 25);
             this.btnMath200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMath200.Name = "btnMath200";
-            this.btnMath200.Size = new System.Drawing.Size(126, 55);
+            this.btnMath200.Size = new System.Drawing.Size(142, 69);
             this.btnMath200.TabIndex = 17;
             this.btnMath200.Text = "200";
             this.btnMath200.UseVisualStyleBackColor = false;
@@ -294,52 +294,52 @@ namespace GameProject
             this.btnGeo800.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGeo800.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeo800.ForeColor = System.Drawing.Color.Yellow;
-            this.btnGeo800.Location = new System.Drawing.Point(6, 202);
+            this.btnGeo800.Location = new System.Drawing.Point(7, 252);
             this.btnGeo800.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeo800.Name = "btnGeo800";
-            this.btnGeo800.Size = new System.Drawing.Size(126, 62);
+            this.btnGeo800.Size = new System.Drawing.Size(142, 78);
             this.btnGeo800.TabIndex = 25;
             this.btnGeo800.Text = "800";
             this.btnGeo800.UseVisualStyleBackColor = false;
-            this.btnGeo800.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnGeo800.Click += new System.EventHandler(this.btnSport800_Click);
             // 
             // btnGeo600
             // 
             this.btnGeo600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGeo600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeo600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnGeo600.Location = new System.Drawing.Point(6, 140);
+            this.btnGeo600.Location = new System.Drawing.Point(7, 175);
             this.btnGeo600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeo600.Name = "btnGeo600";
-            this.btnGeo600.Size = new System.Drawing.Size(126, 58);
+            this.btnGeo600.Size = new System.Drawing.Size(142, 72);
             this.btnGeo600.TabIndex = 24;
             this.btnGeo600.Text = "600";
             this.btnGeo600.UseVisualStyleBackColor = false;
-            this.btnGeo600.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnGeo600.Click += new System.EventHandler(this.btnSport600_Click);
             // 
             // btnGeo400
             // 
             this.btnGeo400.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGeo400.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeo400.ForeColor = System.Drawing.Color.Yellow;
-            this.btnGeo400.Location = new System.Drawing.Point(6, 80);
+            this.btnGeo400.Location = new System.Drawing.Point(7, 100);
             this.btnGeo400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeo400.Name = "btnGeo400";
-            this.btnGeo400.Size = new System.Drawing.Size(126, 54);
+            this.btnGeo400.Size = new System.Drawing.Size(142, 68);
             this.btnGeo400.TabIndex = 23;
             this.btnGeo400.Text = "400";
             this.btnGeo400.UseVisualStyleBackColor = false;
-            this.btnGeo400.Click += new System.EventHandler(this.btnSport200_Click);
+            this.btnGeo400.Click += new System.EventHandler(this.btnSport400_Click);
             // 
             // btnGeo200
             // 
             this.btnGeo200.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGeo200.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeo200.ForeColor = System.Drawing.Color.Yellow;
-            this.btnGeo200.Location = new System.Drawing.Point(6, 21);
+            this.btnGeo200.Location = new System.Drawing.Point(7, 26);
             this.btnGeo200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeo200.Name = "btnGeo200";
-            this.btnGeo200.Size = new System.Drawing.Size(126, 55);
+            this.btnGeo200.Size = new System.Drawing.Size(142, 69);
             this.btnGeo200.TabIndex = 22;
             this.btnGeo200.Text = "200";
             this.btnGeo200.UseVisualStyleBackColor = false;
@@ -349,9 +349,9 @@ namespace GameProject
             // 
             this.lblTeam1.AutoSize = true;
             this.lblTeam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeam1.Location = new System.Drawing.Point(16, 336);
+            this.lblTeam1.Location = new System.Drawing.Point(18, 420);
             this.lblTeam1.Name = "lblTeam1";
-            this.lblTeam1.Size = new System.Drawing.Size(105, 36);
+            this.lblTeam1.Size = new System.Drawing.Size(129, 40);
             this.lblTeam1.TabIndex = 26;
             this.lblTeam1.Text = "Team1";
             // 
@@ -359,9 +359,9 @@ namespace GameProject
             // 
             this.lblTeam2.AutoSize = true;
             this.lblTeam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTeam2.Location = new System.Drawing.Point(649, 336);
+            this.lblTeam2.Location = new System.Drawing.Point(730, 420);
             this.lblTeam2.Name = "lblTeam2";
-            this.lblTeam2.Size = new System.Drawing.Size(105, 36);
+            this.lblTeam2.Size = new System.Drawing.Size(129, 40);
             this.lblTeam2.TabIndex = 27;
             this.lblTeam2.Text = "Team2";
             // 
@@ -369,9 +369,9 @@ namespace GameProject
             // 
             this.lbl1Score.AutoSize = true;
             this.lbl1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1Score.Location = new System.Drawing.Point(54, 372);
+            this.lbl1Score.Location = new System.Drawing.Point(61, 465);
             this.lbl1Score.Name = "lbl1Score";
-            this.lbl1Score.Size = new System.Drawing.Size(32, 36);
+            this.lbl1Score.Size = new System.Drawing.Size(37, 40);
             this.lbl1Score.TabIndex = 28;
             this.lbl1Score.Text = "0";
             // 
@@ -379,9 +379,9 @@ namespace GameProject
             // 
             this.lbl2Score.AutoSize = true;
             this.lbl2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2Score.Location = new System.Drawing.Point(691, 372);
+            this.lbl2Score.Location = new System.Drawing.Point(777, 465);
             this.lbl2Score.Name = "lbl2Score";
-            this.lbl2Score.Size = new System.Drawing.Size(29, 31);
+            this.lbl2Score.Size = new System.Drawing.Size(35, 37);
             this.lbl2Score.TabIndex = 29;
             this.lbl2Score.Text = "0";
             // 
@@ -393,9 +393,11 @@ namespace GameProject
             this.gbSport.Controls.Add(this.btnSport400);
             this.gbSport.Controls.Add(this.btnSport600);
             this.gbSport.Controls.Add(this.btnSport800);
-            this.gbSport.Location = new System.Drawing.Point(15, 17);
+            this.gbSport.Location = new System.Drawing.Point(17, 21);
+            this.gbSport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbSport.Name = "gbSport";
-            this.gbSport.Size = new System.Drawing.Size(144, 268);
+            this.gbSport.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbSport.Size = new System.Drawing.Size(162, 335);
             this.gbSport.TabIndex = 30;
             this.gbSport.TabStop = false;
             this.gbSport.Text = "Sport";
@@ -407,9 +409,11 @@ namespace GameProject
             this.gbHistory.Controls.Add(this.btnHis200);
             this.gbHistory.Controls.Add(this.btnHis600);
             this.gbHistory.Controls.Add(this.btnHis800);
-            this.gbHistory.Location = new System.Drawing.Point(165, 17);
+            this.gbHistory.Location = new System.Drawing.Point(186, 21);
+            this.gbHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbHistory.Name = "gbHistory";
-            this.gbHistory.Size = new System.Drawing.Size(144, 268);
+            this.gbHistory.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbHistory.Size = new System.Drawing.Size(162, 335);
             this.gbHistory.TabIndex = 31;
             this.gbHistory.TabStop = false;
             this.gbHistory.Text = "History";
@@ -421,9 +425,11 @@ namespace GameProject
             this.gbScience.Controls.Add(this.btnSci400);
             this.gbScience.Controls.Add(this.btnSci600);
             this.gbScience.Controls.Add(this.btnSci800);
-            this.gbScience.Location = new System.Drawing.Point(315, 17);
+            this.gbScience.Location = new System.Drawing.Point(354, 21);
+            this.gbScience.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbScience.Name = "gbScience";
-            this.gbScience.Size = new System.Drawing.Size(144, 268);
+            this.gbScience.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbScience.Size = new System.Drawing.Size(162, 335);
             this.gbScience.TabIndex = 32;
             this.gbScience.TabStop = false;
             this.gbScience.Text = "Science";
@@ -435,9 +441,11 @@ namespace GameProject
             this.gbMath.Controls.Add(this.btnMath200);
             this.gbMath.Controls.Add(this.btnMath600);
             this.gbMath.Controls.Add(this.btnMath800);
-            this.gbMath.Location = new System.Drawing.Point(467, 17);
+            this.gbMath.Location = new System.Drawing.Point(525, 21);
+            this.gbMath.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbMath.Name = "gbMath";
-            this.gbMath.Size = new System.Drawing.Size(144, 268);
+            this.gbMath.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbMath.Size = new System.Drawing.Size(162, 335);
             this.gbMath.TabIndex = 33;
             this.gbMath.TabStop = false;
             this.gbMath.Text = "Math";
@@ -449,9 +457,11 @@ namespace GameProject
             this.gbGeography.Controls.Add(this.btnGeo400);
             this.gbGeography.Controls.Add(this.btnGeo600);
             this.gbGeography.Controls.Add(this.btnGeo800);
-            this.gbGeography.Location = new System.Drawing.Point(633, 17);
+            this.gbGeography.Location = new System.Drawing.Point(712, 21);
+            this.gbGeography.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbGeography.Name = "gbGeography";
-            this.gbGeography.Size = new System.Drawing.Size(144, 268);
+            this.gbGeography.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gbGeography.Size = new System.Drawing.Size(162, 335);
             this.gbGeography.TabIndex = 34;
             this.gbGeography.TabStop = false;
             this.gbGeography.Text = "Geography";
@@ -459,10 +469,10 @@ namespace GameProject
             // 
             // frmGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(806, 473);
+            this.ClientSize = new System.Drawing.Size(907, 591);
             this.Controls.Add(this.gbGeography);
             this.Controls.Add(this.gbMath);
             this.Controls.Add(this.gbScience);

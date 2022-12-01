@@ -20,7 +20,7 @@ namespace GameProject
         BindingSource myBindingSource;
         string strSQL;
         string topic = "";
-        string answersfor = "AnswersFor";
+        string answersfor = "";
         string point;
         public int CorNC;
         public frmQuestion(string topics, string points) {
@@ -28,7 +28,7 @@ namespace GameProject
             InitializeComponent();
             point = points;
             topic = topics;
-            answersfor += topic;
+            answersfor = topic+point +"Answers";
 
         }
 
@@ -45,7 +45,7 @@ namespace GameProject
             songDataSet = new DataSet("JepordyTable");
             myDataAdapter.Fill(songDataSet, "JepordyTable");
 
-            strSQL = "SELECT TOP 1 " + topic + ", "+ answersfor + " FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
+            strSQL = "SELECT TOP 1 " + topic + point + ", "+ answersfor + " FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
 
             // Set the data source for the DataGridView to display the records and their information.
             songTable = songDataSet.Tables["JepordyTable"];
