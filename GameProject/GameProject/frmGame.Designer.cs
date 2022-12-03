@@ -58,6 +58,7 @@ namespace GameProject
             this.gbScience = new System.Windows.Forms.GroupBox();
             this.gbMath = new System.Windows.Forms.GroupBox();
             this.gbGeography = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbSport.SuspendLayout();
             this.gbHistory.SuspendLayout();
             this.gbScience.SuspendLayout();
@@ -91,21 +92,21 @@ namespace GameProject
             this.btnSport400.TabIndex = 2;
             this.btnSport400.Text = "400";
             this.btnSport400.UseVisualStyleBackColor = false;
-            this.btnSport400.Click += new System.EventHandler(this.btnSport400_Click);
+            this.btnSport400.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnSport600
             // 
             this.btnSport600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnSport600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSport600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnSport600.Location = new System.Drawing.Point(8, 172);
+            this.btnSport600.Location = new System.Drawing.Point(6, 171);
             this.btnSport600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSport600.Name = "btnSport600";
             this.btnSport600.Size = new System.Drawing.Size(142, 72);
             this.btnSport600.TabIndex = 3;
             this.btnSport600.Text = "600";
             this.btnSport600.UseVisualStyleBackColor = false;
-            this.btnSport600.Click += new System.EventHandler(this.btnSport600_Click);
+            this.btnSport600.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnSport800
             // 
@@ -119,7 +120,7 @@ namespace GameProject
             this.btnSport800.TabIndex = 4;
             this.btnSport800.Text = "800";
             this.btnSport800.UseVisualStyleBackColor = false;
-            this.btnSport800.Click += new System.EventHandler(this.btnSport800_Click);
+            this.btnSport800.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnHis800
             // 
@@ -133,21 +134,21 @@ namespace GameProject
             this.btnHis800.TabIndex = 8;
             this.btnHis800.Text = "800";
             this.btnHis800.UseVisualStyleBackColor = false;
-            this.btnHis800.Click += new System.EventHandler(this.btnSport800_Click);
+            this.btnHis800.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnHis600
             // 
             this.btnHis600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnHis600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHis600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnHis600.Location = new System.Drawing.Point(7, 171);
+            this.btnHis600.Location = new System.Drawing.Point(7, 176);
             this.btnHis600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHis600.Name = "btnHis600";
             this.btnHis600.Size = new System.Drawing.Size(142, 72);
             this.btnHis600.TabIndex = 7;
             this.btnHis600.Text = "600";
             this.btnHis600.UseVisualStyleBackColor = false;
-            this.btnHis600.Click += new System.EventHandler(this.btnSport600_Click);
+            this.btnHis600.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnHis400
             // 
@@ -161,7 +162,7 @@ namespace GameProject
             this.btnHis400.TabIndex = 6;
             this.btnHis400.Text = "400";
             this.btnHis400.UseVisualStyleBackColor = false;
-            this.btnHis400.Click += new System.EventHandler(this.btnSport400_Click);
+            this.btnHis400.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnHis200
             // 
@@ -189,7 +190,7 @@ namespace GameProject
             this.btnSci800.TabIndex = 15;
             this.btnSci800.Text = "800";
             this.btnSci800.UseVisualStyleBackColor = false;
-            this.btnSci800.Click += new System.EventHandler(this.btnSport800_Click);
+            this.btnSci800.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnSci600
             // 
@@ -203,7 +204,7 @@ namespace GameProject
             this.btnSci600.TabIndex = 14;
             this.btnSci600.Text = "600";
             this.btnSci600.UseVisualStyleBackColor = false;
-            this.btnSci600.Click += new System.EventHandler(this.btnSport600_Click);
+            this.btnSci600.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnSci400
             // 
@@ -217,7 +218,7 @@ namespace GameProject
             this.btnSci400.TabIndex = 13;
             this.btnSci400.Text = "400";
             this.btnSci400.UseVisualStyleBackColor = false;
-            this.btnSci400.Click += new System.EventHandler(this.btnSport400_Click);
+            this.btnSci400.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnSci200
             // 
@@ -245,7 +246,7 @@ namespace GameProject
             this.btnMath800.TabIndex = 20;
             this.btnMath800.Text = "800";
             this.btnMath800.UseVisualStyleBackColor = false;
-            this.btnMath800.Click += new System.EventHandler(this.btnSport800_Click);
+            this.btnMath800.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnMath600
             // 
@@ -259,7 +260,7 @@ namespace GameProject
             this.btnMath600.TabIndex = 19;
             this.btnMath600.Text = "600";
             this.btnMath600.UseVisualStyleBackColor = false;
-            this.btnMath600.Click += new System.EventHandler(this.btnSport600_Click);
+            this.btnMath600.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnMath400
             // 
@@ -273,7 +274,7 @@ namespace GameProject
             this.btnMath400.TabIndex = 18;
             this.btnMath400.Text = "400";
             this.btnMath400.UseVisualStyleBackColor = false;
-            this.btnMath400.Click += new System.EventHandler(this.btnSport400_Click);
+            this.btnMath400.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnMath200
             // 
@@ -294,28 +295,27 @@ namespace GameProject
             this.btnGeo800.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGeo800.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeo800.ForeColor = System.Drawing.Color.Yellow;
-            this.btnGeo800.Location = new System.Drawing.Point(7, 252);
+            this.btnGeo800.Location = new System.Drawing.Point(200, 228);
             this.btnGeo800.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeo800.Name = "btnGeo800";
             this.btnGeo800.Size = new System.Drawing.Size(142, 78);
             this.btnGeo800.TabIndex = 25;
             this.btnGeo800.Text = "800";
             this.btnGeo800.UseVisualStyleBackColor = false;
-            this.btnGeo800.Click += new System.EventHandler(this.btnSport800_Click);
             // 
             // btnGeo600
             // 
             this.btnGeo600.BackColor = System.Drawing.Color.MidnightBlue;
             this.btnGeo600.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGeo600.ForeColor = System.Drawing.Color.Yellow;
-            this.btnGeo600.Location = new System.Drawing.Point(7, 175);
+            this.btnGeo600.Location = new System.Drawing.Point(7, 171);
             this.btnGeo600.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGeo600.Name = "btnGeo600";
-            this.btnGeo600.Size = new System.Drawing.Size(142, 72);
+            this.btnGeo600.Size = new System.Drawing.Size(142, 76);
             this.btnGeo600.TabIndex = 24;
             this.btnGeo600.Text = "600";
             this.btnGeo600.UseVisualStyleBackColor = false;
-            this.btnGeo600.Click += new System.EventHandler(this.btnSport600_Click);
+            this.btnGeo600.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnGeo400
             // 
@@ -329,7 +329,7 @@ namespace GameProject
             this.btnGeo400.TabIndex = 23;
             this.btnGeo400.Text = "400";
             this.btnGeo400.UseVisualStyleBackColor = false;
-            this.btnGeo400.Click += new System.EventHandler(this.btnSport400_Click);
+            this.btnGeo400.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // btnGeo200
             // 
@@ -397,7 +397,7 @@ namespace GameProject
             this.gbSport.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gbSport.Name = "gbSport";
             this.gbSport.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gbSport.Size = new System.Drawing.Size(162, 335);
+            this.gbSport.Size = new System.Drawing.Size(163, 352);
             this.gbSport.TabIndex = 30;
             this.gbSport.TabStop = false;
             this.gbSport.Text = "Sport";
@@ -417,7 +417,7 @@ namespace GameProject
             this.gbHistory.TabIndex = 31;
             this.gbHistory.TabStop = false;
             this.gbHistory.Text = "History";
-            this.gbHistory.Enter += new System.EventHandler(this.gbHistory_Enter);
+            this.gbHistory.Enter += new System.EventHandler(this.gbSport_Enter);
             // 
             // gbScience
             // 
@@ -433,7 +433,7 @@ namespace GameProject
             this.gbScience.TabIndex = 32;
             this.gbScience.TabStop = false;
             this.gbScience.Text = "Science";
-            this.gbScience.Enter += new System.EventHandler(this.gbScience_Enter);
+            this.gbScience.Enter += new System.EventHandler(this.gbSport_Enter);
             // 
             // gbMath
             // 
@@ -449,10 +449,11 @@ namespace GameProject
             this.gbMath.TabIndex = 33;
             this.gbMath.TabStop = false;
             this.gbMath.Text = "Math";
-            this.gbMath.Enter += new System.EventHandler(this.gbMath_Enter);
+            this.gbMath.Enter += new System.EventHandler(this.gbSport_Enter);
             // 
             // gbGeography
             // 
+            this.gbGeography.Controls.Add(this.button1);
             this.gbGeography.Controls.Add(this.btnGeo200);
             this.gbGeography.Controls.Add(this.btnGeo400);
             this.gbGeography.Controls.Add(this.btnGeo600);
@@ -465,7 +466,21 @@ namespace GameProject
             this.gbGeography.TabIndex = 34;
             this.gbGeography.TabStop = false;
             this.gbGeography.Text = "Geography";
-            this.gbGeography.Enter += new System.EventHandler(this.gbGeography_Enter);
+            this.gbGeography.Enter += new System.EventHandler(this.gbSport_Enter);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(6, 250);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 78);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "800";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnSport200_Click);
             // 
             // frmGame
             // 
@@ -497,34 +512,35 @@ namespace GameProject
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSport200;
-        private System.Windows.Forms.Button btnSport400;
-        private System.Windows.Forms.Button btnSport600;
-        private System.Windows.Forms.Button btnSport800;
-        private System.Windows.Forms.Button btnHis800;
-        private System.Windows.Forms.Button btnHis600;
-        private System.Windows.Forms.Button btnHis400;
-        private System.Windows.Forms.Button btnHis200;
-        private System.Windows.Forms.Button btnSci800;
-        private System.Windows.Forms.Button btnSci600;
-        private System.Windows.Forms.Button btnSci400;
-        private System.Windows.Forms.Button btnSci200;
-        private System.Windows.Forms.Button btnMath800;
-        private System.Windows.Forms.Button btnMath600;
-        private System.Windows.Forms.Button btnMath400;
-        private System.Windows.Forms.Button btnMath200;
-        private System.Windows.Forms.Button btnGeo800;
-        private System.Windows.Forms.Button btnGeo600;
-        private System.Windows.Forms.Button btnGeo400;
-        private System.Windows.Forms.Button btnGeo200;
         private System.Windows.Forms.Label lblTeam1;
         private System.Windows.Forms.Label lblTeam2;
-        private System.Windows.Forms.GroupBox gbSport;
-        private System.Windows.Forms.GroupBox gbHistory;
-        private System.Windows.Forms.GroupBox gbScience;
-        private System.Windows.Forms.GroupBox gbMath;
-        private System.Windows.Forms.GroupBox gbGeography;
         public System.Windows.Forms.Label lbl1Score;
         public System.Windows.Forms.Label lbl2Score;
+        public System.Windows.Forms.Button btnSport200;
+        public System.Windows.Forms.Button btnSport400;
+        public System.Windows.Forms.Button btnSport600;
+        public System.Windows.Forms.Button btnSport800;
+        public System.Windows.Forms.Button btnHis800;
+        public System.Windows.Forms.Button btnHis600;
+        public System.Windows.Forms.Button btnHis400;
+        public System.Windows.Forms.Button btnHis200;
+        public System.Windows.Forms.Button btnSci800;
+        public System.Windows.Forms.Button btnSci600;
+        public System.Windows.Forms.Button btnSci400;
+        public System.Windows.Forms.Button btnSci200;
+        public System.Windows.Forms.Button btnMath800;
+        public System.Windows.Forms.Button btnMath600;
+        public System.Windows.Forms.Button btnMath400;
+        public System.Windows.Forms.Button btnMath200;
+        public System.Windows.Forms.Button btnGeo800;
+        public System.Windows.Forms.Button btnGeo600;
+        public System.Windows.Forms.Button btnGeo400;
+        public System.Windows.Forms.Button btnGeo200;
+        public System.Windows.Forms.GroupBox gbSport;
+        public System.Windows.Forms.GroupBox gbHistory;
+        public System.Windows.Forms.GroupBox gbScience;
+        public System.Windows.Forms.GroupBox gbMath;
+        public System.Windows.Forms.GroupBox gbGeography;
+        public System.Windows.Forms.Button button1;
     }
 }

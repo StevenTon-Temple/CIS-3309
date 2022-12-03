@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlayerAnswers.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="Players.cs" />
     <Compile Include="frmGame.cs">
       <SubType>Form</SubType>
@@ -71,6 +71,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Questions.cs" />
+    <Compile Include="frmRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRules.Designer.cs">
+      <DependentUpon>frmRules.cs</DependentUpon>
+    </Compile>
     <Compile Include="Wagers.cs" />
     <EmbeddedResource Include="frmGame.resx">
       <DependentUpon>frmGame.cs</DependentUpon>
@@ -90,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmRules.resx">
+      <DependentUpon>frmRules.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -29,11 +29,13 @@ namespace GameProject
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvJeopardy = new System.Windows.Forms.DataGridView();
             this.lblQuestions = new System.Windows.Forms.Label();
             this.txtanswerfor = new System.Windows.Forms.TextBox();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJeopardy)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,6 +88,12 @@ namespace GameProject
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // timer
+            // 
+            this.timer.Enabled = true;
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // frmQuestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -113,5 +121,6 @@ namespace GameProject
         private System.Windows.Forms.TextBox txtanswerfor;
         private System.Windows.Forms.Label lblAnswer;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Timer timer;
     }
 }

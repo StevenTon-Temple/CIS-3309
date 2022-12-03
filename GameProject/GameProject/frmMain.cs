@@ -22,5 +22,18 @@ namespace GameProject
             frmGame frm = new frmGame();
             frm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmRules rules = new frmRules();
+            rules.Show();
+
+
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

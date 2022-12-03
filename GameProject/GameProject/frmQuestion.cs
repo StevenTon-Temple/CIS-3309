@@ -13,52 +13,30 @@ namespace GameProject
 {
     public partial class frmQuestion : Form
     {
-        OleDbConnection myConnection;
-        OleDbDataAdapter myDataAdapter;
-        DataSet songDataSet;
-        DataTable songTable;
-        BindingSource myBindingSource;
-        string strSQL;
-        string topic = "";
-        string answersfor = "";
-        string point;
+        Questions questions = new Questions();
+        string points = "";
+        string topics = "";
         public int CorNC;
-        public frmQuestion(string topics, string points) {
+        private int time;
 
+
+        public frmQuestion(string topic, string point)
+        {
+            topics = topic;
+            points = point;
             InitializeComponent();
-            point = points;
-            topic = topics;
-            answersfor = topic+point +"Answers";
+
+
 
         }
 
-       
+
         private void frmQuestion_Load(object sender, EventArgs e)
         {
-            Console.Out.WriteLine(topic);
-            Console.Out.WriteLine(answersfor);
-
-            // Connect to the database, retrieve a result set of records, and store them in a DataSet
-            myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=JepordyTable.accdb;");
-            strSQL = "SELECT * FROM Jepordy";
-            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
-            songDataSet = new DataSet("JepordyTable");
-            myDataAdapter.Fill(songDataSet, "JepordyTable");
-
-            strSQL = "SELECT TOP 1 " + topic + point + ", "+ answersfor + " FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
-
-            // Set the data source for the DataGridView to display the records and their information.
-            songTable = songDataSet.Tables["JepordyTable"];
-            dgvJeopardy.DataSource = songTable;
-            //strSQL = "SELECT TOP 1" + topic +", "+ answersfor + "FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
-            ///strSQL = "SELECT TOP 1 Sport, AnswerForSport FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
-
-            //strSQL = "SELECT Sport FROM Jepordy WHERE AnswersForSport = 'Baseball';";
-            myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
-            songDataSet = new DataSet("JepordyTable");
-            myDataAdapter.Fill(songDataSet, "JepordyTable");
-            songTable = songDataSet.Tables["JepordyTable"];
-            dgvJeopardy.DataSource = songTable;
+            timer.Start();
+    
+            questions.getQuestion(dgvJeopardy, points, topics);
+           
             int rowindex = dgvJeopardy.CurrentCell.RowIndex;
             int columnindex = dgvJeopardy.CurrentCell.ColumnIndex;
             lblQuestions.Text = dgvJeopardy.Rows[rowindex].Cells[columnindex].Value.ToString();
@@ -79,7 +57,7 @@ namespace GameProject
                 MessageBox.Show("Answer is incorrect!");
                 CorNC = 0;
                 this.Close();
-                
+
             }
         }
 
@@ -87,6 +65,19 @@ namespace GameProject
         {
 
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            time++;
+            this.Text = time.ToString();
+
+            if(time == 60)
+            {
+                MessageBox.Show("Times up");
+                timer.Stop();
+                this.Close();
+            }
+        }
     }
-    }
+}
 
