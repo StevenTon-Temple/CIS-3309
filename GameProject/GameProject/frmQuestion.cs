@@ -25,14 +25,13 @@ namespace GameProject
             topics = topic;
             points = point;
             InitializeComponent();
-
-
-
         }
 
 
         private void frmQuestion_Load(object sender, EventArgs e)
         {
+            // if you want to test answers and to see questions from in a datagridview turn dgvJeopardy.Visible = false to dgvJeopardy.Visible = true;
+            dgvJeopardy.Visible = false;
             timer.Start();
     
             questions.getQuestion(dgvJeopardy, points, topics);
@@ -75,9 +74,12 @@ namespace GameProject
             {
                 MessageBox.Show("Times up");
                 timer.Stop();
+                
                 this.Close();
             }
         }
+
+
     }
 }
 

@@ -42,28 +42,29 @@ namespace GameProject
             // dgvJeopardy
             // 
             this.dgvJeopardy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvJeopardy.Location = new System.Drawing.Point(237, 325);
+            this.dgvJeopardy.Location = new System.Drawing.Point(262, 326);
             this.dgvJeopardy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvJeopardy.Name = "dgvJeopardy";
             this.dgvJeopardy.RowHeadersWidth = 62;
             this.dgvJeopardy.RowTemplate.Height = 28;
-            this.dgvJeopardy.Size = new System.Drawing.Size(210, 110);
+            this.dgvJeopardy.Size = new System.Drawing.Size(141, 59);
             this.dgvJeopardy.TabIndex = 1;
             this.dgvJeopardy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJeopardy_CellContentClick);
             // 
             // lblQuestions
             // 
-            this.lblQuestions.AutoSize = true;
-            this.lblQuestions.Location = new System.Drawing.Point(314, 117);
+            this.lblQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestions.ForeColor = System.Drawing.Color.Yellow;
+            this.lblQuestions.Location = new System.Drawing.Point(11, 75);
             this.lblQuestions.Name = "lblQuestions";
-            this.lblQuestions.Size = new System.Drawing.Size(72, 17);
+            this.lblQuestions.Size = new System.Drawing.Size(714, 134);
             this.lblQuestions.TabIndex = 2;
             this.lblQuestions.Text = "Questions";
             this.lblQuestions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtanswerfor
             // 
-            this.txtanswerfor.Location = new System.Drawing.Point(237, 167);
+            this.txtanswerfor.Location = new System.Drawing.Point(190, 167);
             this.txtanswerfor.Name = "txtanswerfor";
             this.txtanswerfor.Size = new System.Drawing.Size(276, 22);
             this.txtanswerfor.TabIndex = 3;
@@ -71,21 +72,26 @@ namespace GameProject
             // lblAnswer
             // 
             this.lblAnswer.AutoSize = true;
-            this.lblAnswer.Location = new System.Drawing.Point(135, 167);
+            this.lblAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnswer.ForeColor = System.Drawing.Color.Yellow;
+            this.lblAnswer.Location = new System.Drawing.Point(41, 164);
             this.lblAnswer.Name = "lblAnswer";
-            this.lblAnswer.Size = new System.Drawing.Size(96, 17);
+            this.lblAnswer.Size = new System.Drawing.Size(135, 25);
             this.lblAnswer.TabIndex = 4;
             this.lblAnswer.Text = "Enter Answer:";
             this.lblAnswer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(317, 212);
+            this.btnSubmit.BackColor = System.Drawing.Color.MediumBlue;
+            this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubmit.ForeColor = System.Drawing.Color.Yellow;
+            this.btnSubmit.Location = new System.Drawing.Point(262, 221);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(69, 50);
+            this.btnSubmit.Size = new System.Drawing.Size(106, 49);
             this.btnSubmit.TabIndex = 5;
-            this.btnSubmit.Text = "Submit Answer";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // timer
@@ -98,12 +104,13 @@ namespace GameProject
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(735, 455);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.txtanswerfor);
-            this.Controls.Add(this.lblQuestions);
             this.Controls.Add(this.dgvJeopardy);
+            this.Controls.Add(this.lblQuestions);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmQuestion";
             this.Text = "frmQuestion";

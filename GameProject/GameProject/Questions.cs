@@ -14,8 +14,8 @@ namespace GameProject
         private string category;
         OleDbConnection myConnection;
         OleDbDataAdapter myDataAdapter;
-        DataSet songDataSet;
-        DataTable songTable;
+        DataSet jepordyDataSet;
+        DataTable jepordyTable;
         string strSQL;
 
         string topic;
@@ -35,10 +35,10 @@ namespace GameProject
             myConnection = new OleDbConnection("provider=Microsoft.ACE.OLEDB.12.0;Data Source=JepordyTable.accdb;");
             strSQL = "SELECT TOP 1 " + topic + point + ", " + answersfor + " FROM Jepordy ORDER BY Rnd(-(1000*ID)*Time())";
             myDataAdapter = new OleDbDataAdapter(strSQL, myConnection);
-            songDataSet = new DataSet("JepordyTable");
-            myDataAdapter.Fill(songDataSet, "JepordyTable");
-            songTable = songDataSet.Tables["JepordyTable"];
-            dgvJeopardy.DataSource = songTable;
+            jepordyDataSet = new DataSet("JepordyTable");
+            myDataAdapter.Fill(jepordyDataSet, "JepordyTable");
+            jepordyTable = jepordyDataSet.Tables["JepordyTable"];
+            dgvJeopardy.DataSource = jepordyTable;
 
         }
     }

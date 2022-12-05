@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,34 +10,40 @@ namespace GameProject
 {
     class Players
     {
-        private int player_id;
-        private string name;
-        private int player_score;
+      
+        string strSQL;
 
-        public int Player_Id
+    
+
+        public void Update_score(int team1Score, int team2Score)
         {
-            get { return player_id; }
-            set { player_id = value; }
-        }
-        public int Player_score
-        {
-            get { return player_score; }
-            set { player_score = value; }
-        }
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
+            string connectionStr = ("provider=Microsoft.ACE.OLEDB.12.0;Data Source= JepordyTable.accdb;");
+            strSQL = "UPDATE Team " + " SET Team1 = " +
+            team1Score + ", Team2 = " + team2Score;
+            OleDbConnection con = new OleDbConnection(connectionStr);
+            OleDbCommand com = new OleDbCommand(strSQL, con);
+            try
+            {
+                con.Open();
+                com.ExecuteNonQuery();
+            }
+            catch (OleDbException ex)
+            {
+                Console.WriteLine(ex);
+            }
+            catch (SystemException ex)
+            {
+                Console.WriteLine(ex);
+            }
+
+            finally
+            {
+                con.Close();
+            }
+            
         }
 
-        private void getPlayer()
-        {
-
-        }
-
-        private void getPlayerScores()
-        {
-
-        }
     }
-}
+        
+    }
+

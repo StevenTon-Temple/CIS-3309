@@ -13,11 +13,11 @@ namespace GameProject
 {
     public partial class frmGame : Form
     {
-        string topic;
        
         Game gamecs = new Game();
         Questions question = new Questions();
-        string g;
+        Players player = new Players();
+        int teamTurn = 1;
         public frmGame()
         {
             InitializeComponent();
@@ -25,6 +25,7 @@ namespace GameProject
 
         private void frmGame_Load(object sender, EventArgs e)
         {
+
         }
 
 
@@ -32,48 +33,59 @@ namespace GameProject
         private void gbSport_Enter(object sender, EventArgs e)
         {
             
-            string t = (sender as GroupBox).Text;
-            topic = t;
-            question.Category = t;
-            g = t;
+            string topic = (sender as GroupBox).Text;
+            question.Category = topic;
+           
         }
 
        
         private void btnSport200_Click(object sender, EventArgs e)
         {
+
             int score1 = int.Parse(lbl1Score.Text);
+            int score2 = int.Parse(lbl2Score.Text);
             string point = (sender as Button).Text;
-            
-            frmQuestion questions = new frmQuestion(g, point);
+
+            frmQuestion questions = new frmQuestion(question.Category, point);
             questions.ShowDialog();
-            if (questions.CorNC == 1)
+
+            Button clickedButton = (Button)sender;
+           
+            if (questions.CorNC == 0)
             {
-                if (topic.Equals("Sport"))
+                if (teamTurn.Equals(1))
                 {
-                    btnSport200.Visible = false;
+                    teamTurn = 2;
+                    lblTeamTurn.Text = "Team 2 Turn";
                 }
-                if (topic.Equals("History"))
+                else
                 {
-                    btnHis200.Visible = false;
+                    teamTurn = 1;
+                    lblTeamTurn.Text = "Team 1 Turn";
                 }
-                if (topic.Equals("Science"))
+            }
+
+            int t = gamecs.GetPoint(point);
+            if (questions.CorNC == 1) {
+                clickedButton.Visible = false;
+                if (teamTurn.Equals(1))
                 {
-                    btnSci200.Visible = false;
+                    score1 += t;
+                    lbl1Score.Text = score1.ToString();
                 }
-                if (topic.Equals("Math"))
+                else
                 {
-                    btnMath200.Visible = false;
+                    score2 += t;
+                    lbl2Score.Text = score2.ToString();
+
                 }
-                if (topic.Equals("Geography"))
-                {
-                    btnGeo200.Visible = false;
-                }
-                int t = gamecs.GetPoint(point);
-                score1 += t;
-                lbl1Score.Text = score1.ToString();
-              
+                player.Update_score(score1, score2);
 
             }
+           
+            Console.WriteLine(score1);
+            
+
         }
     }
 }
