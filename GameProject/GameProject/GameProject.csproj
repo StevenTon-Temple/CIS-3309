@@ -48,6 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlayers.Designer.cs">
+      <DependentUpon>frmPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScoreboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScoreboard.Designer.cs">
+      <DependentUpon>frmScoreboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Game.cs" />
     <Compile Include="Players.cs" />
     <Compile Include="frmGame.cs">
@@ -77,15 +89,20 @@
     <Compile Include="frmRules.Designer.cs">
       <DependentUpon>frmRules.cs</DependentUpon>
     </Compile>
-    <Compile Include="Wagers.cs" />
     <EmbeddedResource Include="frmGame.resx">
       <DependentUpon>frmGame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPlayers.resx">
+      <DependentUpon>frmPlayers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuestion.resx">
       <DependentUpon>frmQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScoreboard.resx">
+      <DependentUpon>frmScoreboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

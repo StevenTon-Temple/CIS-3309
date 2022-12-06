@@ -30,8 +30,8 @@ namespace GameProject
 
         private void frmQuestion_Load(object sender, EventArgs e)
         {
-            // if you want to test answers and to see questions from in a datagridview turn dgvJeopardy.Visible = false to dgvJeopardy.Visible = true;
             dgvJeopardy.Visible = false;
+            // timer for 60 seconds per question
             timer.Start();
     
             questions.getQuestion(dgvJeopardy, points, topics);
@@ -45,6 +45,7 @@ namespace GameProject
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            // show if you got the answer right or wrong
             if (txtanswerfor.Text.Equals(dgvJeopardy.Rows[0].Cells[1].Value.ToString()))
             {
                 MessageBox.Show("Answer is correct!");
@@ -67,6 +68,7 @@ namespace GameProject
 
         private void timer_Tick(object sender, EventArgs e)
         {
+            // displays message box for when you have no more time left 
             time++;
             this.Text = time.ToString();
 

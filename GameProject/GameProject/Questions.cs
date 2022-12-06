@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace GameProject
 {
-    class Questions
+  public class Questions
     {
         private string category;
         OleDbConnection myConnection;
@@ -27,6 +27,7 @@ namespace GameProject
             get { return category; }
             set { category = value; }
         }
+        //method to get jeopardy questions from our database
         public void getQuestion(DataGridView dgvJeopardy, string points, string topics)
         {
             point = points;

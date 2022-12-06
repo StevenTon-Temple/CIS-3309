@@ -19,13 +19,19 @@ namespace GameProject
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            frmGame frm = new frmGame();
-            frm.ShowDialog();
+            //opens new form to start playing
+
+            frmPlayers player = new frmPlayers();
+       
+            player.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRules_Click(object sender, EventArgs e)
         {
+            //opens new form to look at the rules
+
             frmRules rules = new frmRules();
+            
             rules.Show();
 
 
@@ -33,7 +39,7 @@ namespace GameProject
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+             
         }
     }
 }

@@ -8,18 +8,30 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    class Players
+    public class Players
     {
-      
+        string player1;
+        string player2;
         string strSQL;
 
-    
+        public string Player1
+        {
+            get { return player1; }
+            set { player1 = value; }
+        }
 
+        public string Player2
+        {
+            get { return player2; }
+            set { player2 = value; }
+        }
+
+        //method to update player score to display at the end of game
         public void Update_score(int team1Score, int team2Score)
         {
+
             string connectionStr = ("provider=Microsoft.ACE.OLEDB.12.0;Data Source= JepordyTable.accdb;");
-            strSQL = "UPDATE Team " + " SET Team1 = " +
-            team1Score + ", Team2 = " + team2Score;
+            strSQL = "UPDATE [Player] SET [Player1] = " + team1Score + ", [Player2] = " + team2Score + " WHERE [ID] = " + 1 + ";";
             OleDbConnection con = new OleDbConnection(connectionStr);
             OleDbCommand com = new OleDbCommand(strSQL, con);
             try
@@ -40,10 +52,10 @@ namespace GameProject
             {
                 con.Close();
             }
-            
+           
         }
 
     }
         
-    }
+}
 

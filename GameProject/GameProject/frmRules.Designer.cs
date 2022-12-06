@@ -175,7 +175,6 @@ namespace GameProject
             this.label3.Size = new System.Drawing.Size(508, 25);
             this.label3.TabIndex = 9;
             this.label3.Text = "and keeps picking the next question until they get it wrong";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // frmRules
             // 

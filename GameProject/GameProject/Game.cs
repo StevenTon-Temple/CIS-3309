@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GameProject
 {
-    class Game
+   public class Game
     {
-
+        // method to get points
         public int GetPoint(string point)
         {
             {
